@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackers Terminal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="Container relative flex justify-center items-start p-5">
+      <!-- <div class="bg-image absolute inset-0 -z-1">
+        <video src="./bg vieo.mp4" autoplay muted></video>
+      </div> -->
+      <div class="terminal w-full max-w-[1500px] h-full bg-slate-900 rounded-md">
+        <div class="header flex justify-between items-center px-3 py-2">
+          <div class="dots flex gap-1">
+            <div
+              class="dot h-3 w-3 rounded-full bg-[var(--color)]"
+              style="--color: #f84848"
+            ></div>
+            <div
+              class="dot h-3 w-3 rounded-full bg-[var(--color)]"
+              style="--color: #fcba40"
+            ></div>
+            <div
+              class="dot h-3 w-3 rounded-full bg-[var(--color)]"
+              style="--color: #37c648"
+            ></div>
+          </div>
+          <div class="newTerm cursor-pointer">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#D1D5DB"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.5 1.007l12.999.17.43.501-1.82 12.872-.57.489-13-.17-.43-.502L1.93 1.495l.57-.488zM1.18 13.885l11.998.157 1.68-11.882L2.86 2.003 1.18 13.885zm5.791-3.49l-.14.991 5 .066.14-.99-5-.066zm1.71-2.457l-3.663-2.93-.692.796 2.636 2.112L3.739 9.95l.465.812L8.68 7.938z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="mainTerm overflow-hidden text-green-600 px-3 bg-slate-950">
+          
+          <p class="pb-6">
+            Windows PowerShell <br />Copyright (C) Microsoft Corporation. All
+            rights reserved. <br />
+            Try the new cross-platform PowerShell https://aka.ms/pscore6
+          </p>
+          <div>
+            <p class="text-orange-900">
+              st@DESKTOP-UBPI2S8 MINGW64/Hackers Terminal
+            </p>
+            <div class="messages">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

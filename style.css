@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  font-family: "VT323", monospace;
+}
+.Container {
+  min-height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.751),
+      rgba(7, 7, 7, 0.284)
+    ),
+    url(/background.jpg); */
+  background-size: cover;
+  background-position: center;
+  
+}
