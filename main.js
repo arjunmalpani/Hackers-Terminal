@@ -2,24 +2,24 @@ const messageDiv = document.querySelector(".messages");
 const mainTerm = document.querySelector(".mainTerm");
 const hackerMessages = [
   "Access granted",
-  "Initializing sequence",
-  "Bypassing security protocols",
-  "Connection established",
-  "Downloading files",
-  "Encrypting data",
-  "Running diagnostics",
-  "Hacker mode activated",
-  "System breach detected",
-  "Executing commands",
-  "Data retrieval complete",
-  "Uploading to cloud storage",
-  "Firewall breached",
-  "Launching exploit",
-  "Intrusion successful",
-  "Exiting program",
+  // "Initializing sequence",
+  // "Bypassing security protocols",
+  // "Connection established",
+  // "Downloading files",
+  // "Encrypting data",
+  // "Running diagnostics",
+  // "Hacker mode activated",
+  // "System breach detected",
+  // "Executing commands",
+  // "Data retrieval complete",
+  // "Uploading to cloud storage",
+  // "Firewall breached",
+  // "Launching exploit",
+  // "Intrusion successful",
+  // "Exiting program",
 ];
 
-//Delay Function 
+//Delay Function
 const randomDelay = () => {
   return new Promise((resolve) => {
     let timeout = Math.floor(1 + 4 * Math.random());
@@ -29,7 +29,6 @@ const randomDelay = () => {
     }, timeout * 1000);
   });
 };
-
 
 // Add Items Function
 const addItems = async () => {
@@ -57,20 +56,24 @@ const addItems = async () => {
   finalMessage.classList.add("message", "final-message");
   finalMessage.innerHTML = `<span>Process complete</span>`;
   messageDiv.appendChild(finalMessage);
-  setTimeout(()=>{
-    showNextContent() //Call show next content
-  },3000)
+  setTimeout(() => {
+    showNextContent(); //Call show next content
+  }, 3000);
 };
 
-// NExt Content Function
-const showNextContent = () =>{
-  mainTerm.innerHTML = ``
+// Next Content Function
+const showNextContent = () => {
+  mainTerm.innerHTML = ``;
   let video = document.createElement("VIDEO");
   video.setAttribute("src", "./vVDiWMXS.mp4");
-  video.style.marginInline = 'auto'
-  mainTerm.append(video);
+  video.style.marginInline = "auto";
+  video.style.minHeight = "500px";
+  video.style.objectFit = "cover";
   video.play();
-}
+  console.log(video.muted);
+
+  mainTerm.append(video);
+};
 
 // Universal blinking function for `.blink` elements
 const applyBlinkEffect = (element) => {
